@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.20)
 
 if(NOT DEFINED ENV{VCPKG_ROOT})
-    message(FATAL_ERROR "VCPKG_ROOT is not defined!")
+    set(ENV{VCPKG_ROOT} "${CMAKE_SOURCE_DIR}/thirdparty/vcpkg")
 endif()
 
 include($ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake)
@@ -26,9 +26,9 @@ add_compile_options(
     -march=sandybridge
 )
 
-project("reblue-all")
+project("eot-all")
 
 add_subdirectory(${REBLUE_THIRDPARTY_ROOT})
 add_subdirectory(${REBLUE_TOOLS_ROOT})
-add_subdirectory("rebluelib")
-add_subdirectory("reblue")
+add_subdirectory("EOTLib")
+add_subdirectory("EOTMain")
