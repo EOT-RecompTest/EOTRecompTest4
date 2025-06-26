@@ -114,30 +114,30 @@ set(REBLUE_UI_CXX_SOURCES
 #    "ui/tv_static.cpp"
 )
 
-set(REBLUE_INSTALL_CXX_SOURCES
-    "install/installer.cpp"
-    "install/iso_file_system.cpp"
-    "install/update_checker.cpp"
-    "install/xcontent_file_system.cpp"
-    "install/hashes/apotos_shamar.cpp"
-    "install/hashes/chunnan.cpp"
-    "install/hashes/empire_city_adabat.cpp"
-    "install/hashes/game.cpp"
-    "install/hashes/holoska.cpp"
-    "install/hashes/mazuri.cpp"
-    "install/hashes/spagonia.cpp"
-    "install/hashes/update.cpp"
-)
+#set(REBLUE_INSTALL_CXX_SOURCES
+#    "install/installer.cpp"
+#    "install/iso_file_system.cpp"
+#    "install/update_checker.cpp"
+#    "install/xcontent_file_system.cpp"
+#    "install/hashes/apotos_shamar.cpp"
+#    "install/hashes/chunnan.cpp"
+#    "install/hashes/empire_city_adabat.cpp"
+#    "install/hashes/game.cpp"
+#    "install/hashes/holoska.cpp"
+#    "install/hashes/mazuri.cpp"
+#    "install/hashes/spagonia.cpp"
+#    "install/hashes/update.cpp"
+#)
 
-set(REBLUE_USER_CXX_SOURCES
-    "user/achievement_data.cpp"
-    #"user/achievement_manager.cpp"
-    "user/config.cpp"
+#set(REBLUE_USER_CXX_SOURCES
+#    "user/achievement_data.cpp"
+#    #"user/achievement_manager.cpp"
+#    "user/config.cpp"
     "user/registry.cpp"
     "user/paths.cpp"
     "user/persistent_data.cpp"
-    "user/persistent_storage_manager.cpp"
-)
+#    "user/persistent_storage_manager.cpp"
+#)
 
 set(REBLUE_MOD_CXX_SOURCES
     "mod/mod_loader.cpp"

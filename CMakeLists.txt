@@ -26,9 +26,9 @@ add_compile_options(
     -march=sandybridge
 )
 
-project("reblue-all")
+project("eot-all")
 
 add_subdirectory(${REBLUE_THIRDPARTY_ROOT})
 add_subdirectory(${REBLUE_TOOLS_ROOT})
-add_subdirectory("rebluelib")
-add_subdirectory("reblue")
+add_subdirectory("EOTLib")
+add_subdirectory("EOTMain")
