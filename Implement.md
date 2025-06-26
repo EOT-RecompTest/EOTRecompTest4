@@ -1,6 +1,6 @@
 # Edge of Time Implementation Notes
 
-This repository was designed for Sonic Unleashed. Porting it for **Edge of Time (EOT)** requires changes across multiple modules.
+This repository was designed for Blue Dragon (Xbox 360). Porting it for **Edge of Time (EOT)** requires changes across multiple modules.
 
 General tasks:
 
