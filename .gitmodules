@@ -4,7 +4,6 @@
 [submodule "tools/XenonRecomp"]
 	path = tools/XenonRecomp
 	url = https://github.com/EOT-RecompTest/XenonRecompUnlim
-	branch = impl-opcodes
 [submodule "thirdparty/ddspp"]
 	path = thirdparty/ddspp
 	url = https://github.com/redorav/ddspp.git
