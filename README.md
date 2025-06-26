@@ -2,7 +2,7 @@
 
 ## Setup & Build Configuration
 
-- Begin by pointing the build system to rebluelib/config/EOTConfig.toml instead of the current Unleashed configuration. Adjust CMake presets accordingly.
+- Begin by pointing the build system to EOTlib/config/EOTConfig.toml instead of the current Unleashed configuration. Adjust CMake presets accordingly.
 - Temporarily remove Sonic-specific source files from the CMake lists to ensure the build can compile with EOT pieces first.
 - Expected Outcome: A basic build that compiles using the Edge of Time configuration, even if it doesn’t run yet.
 
