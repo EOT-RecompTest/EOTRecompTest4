@@ -2,7 +2,16 @@ project("reblue")
 
 if (WIN32)
     option(UNLEASHED_RECOMP_D3D12 "Add D3D12 support for rendering" ON)
+    if (UNLEASHED_RECOMP_D3D12)
+        find_library(D3D12_LIB d3d12 HINTS $ENV{WindowsSdkDir}/Lib
+            PATH_SUFFIXES "x64" "x86" "um/x64" "um/x86")
+        if (NOT D3D12_LIB)
+            message(WARNING "D3D12.lib not found - disabling UNLEASHED_RECOMP_D3D12")
+            set(UNLEASHED_RECOMP_D3D12 OFF)
+        endif()
+    endif()
 endif()
+
 
 add_compile_options(
     -fno-strict-aliasing
@@ -129,15 +138,15 @@ set(REBLUE_UI_CXX_SOURCES
 #    "install/hashes/update.cpp"
 #)
 
-#set(REBLUE_USER_CXX_SOURCES
-#    "user/achievement_data.cpp"
-#    #"user/achievement_manager.cpp"
-#    "user/config.cpp"
+set(REBLUE_USER_CXX_SOURCES
+    "user/achievement_data.cpp"
+    "user/achievement_manager.cpp"
+    "user/config.cpp"
     "user/registry.cpp"
     "user/paths.cpp"
     "user/persistent_data.cpp"
-#    "user/persistent_storage_manager.cpp"
-#)
+    "user/persistent_storage_manager.cpp"
+)
 
 set(REBLUE_MOD_CXX_SOURCES
     "mod/mod_loader.cpp"
