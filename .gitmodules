@@ -3,7 +3,7 @@
 	url = https://github.com/microsoft/vcpkg
 [submodule "tools/XenonRecomp"]
 	path = tools/XenonRecomp
-	url = https://github.com/CRACKbomber/XenonRecomp.git
+	url = https://github.com/EOT-RecompTest/XenonRecompUnlim
 	branch = impl-opcodes
 [submodule "thirdparty/ddspp"]
 	path = thirdparty/ddspp
